@@ -9,7 +9,7 @@ export function readFileJson(path: string): Promise<unknown> {
         try {
           setTimeout(() => {
             const file = JSON.parse(data)
-            resolve(file.users)
+            resolve(file)
           },3000)
         } catch (error) {
           reject(error)
